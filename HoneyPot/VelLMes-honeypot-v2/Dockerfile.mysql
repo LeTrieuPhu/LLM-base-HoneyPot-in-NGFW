@@ -1,0 +1,26 @@
+FROM python:3.11-slim
+
+WORKDIR /app
+
+# Install system dependencies
+RUN apt-get update && apt-get install -y \
+    default-mysql-client \
+    net-tools \
+    && rm -rf /var/lib/apt/lists/*
+
+# Copy requirements and install Python packages
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copy application files
+COPY app/ /app/
+
+# Create directories
+RUN mkdir -p /app/Logs/MySQL /app/Conversations/MySQL
+
+# Set environment variables
+ENV PYTHONPATH=/app
+
+EXPOSE 3306
+
+CMD ["python", "mysql_server.py"]
