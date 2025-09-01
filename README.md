@@ -52,4 +52,4 @@ http://192.168.100.10
 ![CVE-2025-32013](https://github.com/LeTrieuPhu/LLM-base-HoneyPot-in-NGFW/blob/main/Report/CVE-2025-32013.jpg)
 3. Tổng Hợp
 ![ALL](https://github.com/LeTrieuPhu/LLM-base-HoneyPot-in-NGFW/blob/main/Report/ALL_CVE.jpg)
-> ℹ️ **Chú thích:** Kết quả chi tiết của đồ án trong [Báo Cáo](https://github.com/LeTrieuPhu/LLM-base-HoneyPot-in-NGFW/blob/main/LeTrieuPhu_TranThienManh_DACN.pdf)
+> ℹ️ **Chú thích:** Kết quả phân tích chi tiết của đồ án trong [Báo Cáo](https://github.com/LeTrieuPhu/LLM-base-HoneyPot-in-NGFW/blob/main/LeTrieuPhu_TranThienManh_DACN.pdf)
