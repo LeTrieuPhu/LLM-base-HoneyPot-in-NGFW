@@ -10,7 +10,7 @@
 # Application Architecture
 ![Application Architecture](https://github.com/LeTrieuPhu/LLM-base-HoneyPot-in-NGFW/blob/main/Report/app_data.png)
 # Cơ chế hoạt động của Honeypot
-![https://github.com/LeTrieuPhu/LLM-base-HoneyPot-in-NGFW/blob/main/Report/Honeypot.png]
+![Honeypot](https://github.com/LeTrieuPhu/LLM-base-HoneyPot-in-NGFW/blob/main/Report/Honeypot.png)
 # Hướng dẫn sử dụng
 1. Clone git
 ```bash
