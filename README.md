@@ -17,8 +17,12 @@ Sơ đồ tổng quát về sự tương tác giữa các host và luồng dữ 
 6. Bước quan trọng trong đề tài, Trích xuất IOC, payload và các thủ thuật tấn công khác để tạo event cho MISP, thuận tiện cho quá trình theo dõi và giám sát cũng như truy vết
 ![Application Architecture](https://github.com/LeTrieuPhu/LLM-base-HoneyPot-in-NGFW/blob/main/Report/app_data.png)
 # Cơ chế hoạt động của Honeypot
-Nội dung chính của đề tài là Honeypot, cấu hình hệ thống có thể tham khảo [NGFW-iptable-squid-snort-clamav-MISP](https://github.com/LeTrieuPhu/NGFW-iptable-squid-snort-clamav-MISP)
+1. **Research:** Tìm kiếm những CVE mới nhất liên đến SSH và HTTP, kết quả trả về dưới dạng JSON bao gồm mô tả chi tiết và công cụ có lỗ hổng
+2. **Agent Promt** Từ những mô tả về CVE, Module này sẽ viết promt hướng dẫn cho honeypot mô phỏng lại CVE
+3. Sau khi hoàn thành tạo promt, promt này sẽ được cập nhật vào Config file của từng giao thức (SSH,HTTP)
+4. Khi có sự tương tác từ attacker, VelLMes sẽ gửi promt lên LLM và nhận về kết quả phản lại cho attacker, đảm bảo giống với hệ thống thật nhất có thể và tránh bị phát hiện. Shell code của Attacker và nội dung phản hồi của Honeypot sẽ được lưu trong 2 file là: Converstion và Log Server
 ![Honeypot](https://github.com/LeTrieuPhu/LLM-base-HoneyPot-in-NGFW/blob/main/Report/Honeypot.png)
+Nội dung chính của đề tài là Honeypot, cấu hình hệ thống có thể tham khảo [NGFW-iptable-squid-snort-clamav-MISP](https://github.com/LeTrieuPhu/NGFW-iptable-squid-snort-clamav-MISP)
 # Hướng dẫn sử dụng
 1. Clone git
 ```bash
