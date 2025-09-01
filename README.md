@@ -1,10 +1,16 @@
 ## LLM-base-HoneyPot-in-NGFW
 ## Mục Lục
-- []()
-- []()
-- []()
-- []()
-- []()
+- [Sơ đồ mạng](#Sơ-đồ-mạng)
+- [Application Architecture](#Application-Architecture)
+- [Cơ chế hoạt động của Honeypot](#Cơ-chế-hoạt-động-của-Honeypot)
+- [Hướng dẫn sử dụng](#Hướng-dẫn-sử-dụng)
+- [Kết Quả](#Kết-Quả)
+# Sơ đồ mạng
+![Sơ đồ mạng](https://github.com/LeTrieuPhu/LLM-base-HoneyPot-in-NGFW/blob/main/Report/Network.png)
+# Application Architecture
+![Application Architecture](https://github.com/LeTrieuPhu/LLM-base-HoneyPot-in-NGFW/blob/main/Report/app_data.png)
+# Cơ chế hoạt động của Honeypot
+![https://github.com/LeTrieuPhu/LLM-base-HoneyPot-in-NGFW/blob/main/Report/Honeypot.png]
 # Hướng dẫn sử dụng
 1. Clone git
 ```bash
@@ -32,4 +38,5 @@ ssh admin@192.168.100.10 -p 22
 ```bash
 http://192.168.100.10
 ```
-5. 
+# Kết Quả
+
