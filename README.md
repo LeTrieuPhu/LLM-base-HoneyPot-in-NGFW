@@ -17,6 +17,7 @@ Sơ đồ tổng quát về sự tương tác giữa các host và luồng dữ 
 6. Bước quan trọng trong đề tài, Trích xuất IOC, payload và các thủ thuật tấn công khác để tạo event cho MISP, thuận tiện cho quá trình theo dõi và giám sát cũng như truy vết
 ![Application Architecture](https://github.com/LeTrieuPhu/LLM-base-HoneyPot-in-NGFW/blob/main/Report/app_data.png)
 # Cơ chế hoạt động của Honeypot
+Nội dung chính của đề tài là Honeypot, cấu hình hệ thống có thể tham khảo [NGFW-iptable-squid-snort-clamav-MISP](https://github.com/LeTrieuPhu/NGFW-iptable-squid-snort-clamav-MISP)
 ![Honeypot](https://github.com/LeTrieuPhu/LLM-base-HoneyPot-in-NGFW/blob/main/Report/Honeypot.png)
 # Hướng dẫn sử dụng
 1. Clone git
