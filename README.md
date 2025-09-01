@@ -8,6 +8,7 @@
 # Sơ đồ mạng
 ![Sơ đồ mạng](https://github.com/LeTrieuPhu/LLM-base-HoneyPot-in-NGFW/blob/main/Report/Network.png)
 # Application Architecture
+Sơ đồ tổng quát về sự tương tác giữa các host và luồng dữ liệu bên trong hệ thống
 ![Application Architecture](https://github.com/LeTrieuPhu/LLM-base-HoneyPot-in-NGFW/blob/main/Report/app_data.png)
 # Cơ chế hoạt động của Honeypot
 ![Honeypot](https://github.com/LeTrieuPhu/LLM-base-HoneyPot-in-NGFW/blob/main/Report/Honeypot.png)
