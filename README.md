@@ -8,7 +8,13 @@
 # Sơ đồ mạng
 ![Sơ đồ mạng](https://github.com/LeTrieuPhu/LLM-base-HoneyPot-in-NGFW/blob/main/Report/Network.png)
 # Application Architecture
-Sơ đồ tổng quát về sự tương tác giữa các host và luồng dữ liệu bên trong hệ thống
+Sơ đồ tổng quát về sự tương tác giữa các host và luồng dữ liệu bên trong hệ thống:
+1. Gói tin đi vào Firewall từ phía User và Internet sẽ đi qua iptables đầu tiên
+2. Gói sẽ được chuyển sang cho Suricata xử lý, so sánh với rule đã được viết trước để phát hiện tấn công, khi hoàn thành so sánh, gói tin sẽ được trả về iptable để xử lý tiếp
+3. Gói tin sẽ được gửi đến Squid Proxy, Squid sẽ kiểm tra 2 bước: Kiểm tra URL có nằm trong black list không, Xác thực tài khoản LDAP
+4. Trích xuất IOC từ log của Suricata và tạo event trên MISP
+5. Từ những IOC có được, tiến hành viết rule chặn IP trên iptables và cập nhật URL độc hại mới vào Blacklist
+6. Bước quan trọng trong đề tài, Trích xuất IOC, payload và các thủ thuật tấn công khác để tạo event cho MISP, thuận tiện cho quá trình theo dõi và giám sát cũng như truy vết
 ![Application Architecture](https://github.com/LeTrieuPhu/LLM-base-HoneyPot-in-NGFW/blob/main/Report/app_data.png)
 # Cơ chế hoạt động của Honeypot
 ![Honeypot](https://github.com/LeTrieuPhu/LLM-base-HoneyPot-in-NGFW/blob/main/Report/Honeypot.png)
