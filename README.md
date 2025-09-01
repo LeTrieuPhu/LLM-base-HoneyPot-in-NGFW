@@ -39,4 +39,16 @@ ssh admin@192.168.100.10 -p 22
 http://192.168.100.10
 ```
 # Kết Quả
-
+1. Ba CVE về SSH
+- CVE-2025-32728
+![CVE-2025-32728](https://github.com/LeTrieuPhu/LLM-base-HoneyPot-in-NGFW/blob/main/Report/CVE-2025-32728.jpg)
+- CVE-2025-32754
+![CVE-2025-32754](https://github.com/LeTrieuPhu/LLM-base-HoneyPot-in-NGFW/blob/main/Report/CVE-2025-32754.jpg)
+- CVE-2025-32755
+![CVE-2025-32755](https://github.com/LeTrieuPhu/LLM-base-HoneyPot-in-NGFW/blob/main/Report/CVE-2025-32755.jpg)
+- 
+2. Một CVE về HTTP
+- CVE-2025-32013
+![CVE-2025-32013](https://github.com/LeTrieuPhu/LLM-base-HoneyPot-in-NGFW/blob/main/Report/CVE-2025-32013.jpg)
+3. Tổng Hợp
+![ALL](https://github.com/LeTrieuPhu/LLM-base-HoneyPot-in-NGFW/blob/main/Report/ALL_CVE.jpg)
